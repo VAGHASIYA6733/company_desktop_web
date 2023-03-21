@@ -1,0 +1,67 @@
+
+body{
+    background-color: transparent !important;
+}
+body::-webkit-scrollbar { width: 0px; }
+
+body::-webkit-scrollbar-track {
+  background: var(--white);
+  border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 80%);
+  border: 3px solid var(--white);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
+
+    
+
+
+
+.textcol{
+    color: #4d6691;
+}
+.hoverli:hover{
+    background-color: #d1d6dbd0;
+}
+a{
+    text-decoration: none;
+}
+#cars{
+    border: none;
+border-bottom: 1px solid ;
+outline: none;
+appearance:none; 
+text-align: center;
+}
+#search{
+border: none;
+outline: none;
+border-bottom: 2px solid rgba(0, 0, 0, 0.396);
+}
+#search:focus{
+border-color: #76bc78;
+border-radius:1px ;
+transition: 0.8s;
+}
+
+.a{
+   
+    color: #2f9c3a;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+.a:hover{
+    color: rgb(106, 82, 50);
+}
+.b{
+    color: #cab01c;
+    font-size: 25px;
+}
+.b:hover{
+    color: #bc2716;
+}

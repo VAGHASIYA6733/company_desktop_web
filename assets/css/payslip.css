@@ -1,0 +1,25 @@
+
+.textcol{
+    color: #353C48 !important;
+}
+body{
+    background-color: transparent !important;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+col body::-webkit-scrollbar-track {
+    background: var(--white);
+    border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(236, 136, 0);
+    border: 3px solid var(--white);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%);
+}

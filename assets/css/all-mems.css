@@ -1,0 +1,58 @@
+body{
+    background-color: transparent;
+}
+.textcol{
+    color: #405d8f;
+}
+.hoverli:hover{
+    background-color: #edf1f6d0;
+}
+a{
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+   
+}
+#cars{
+    border: none;
+border-bottom: 1px solid ;
+outline: none;
+appearance:none; 
+text-align: center;
+}
+#search{
+border: none;
+outline: none;
+border-bottom: 2px solid rgba(0, 0, 0, 0.396);
+}
+#search:focus{
+border-color: #4FAB52;
+border-radius:1px ;
+transition: 0.8s;
+}
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.a{
+    color: #10ee00;
+    font-size: 25px;
+    padding: 10px;
+}
+.a:hover{
+    color: #1e16bc;
+}
+.b{
+    color: #cab01c;
+    font-size: 25px;
+}
+.b:hover{
+    color: #ff1900;
+}
+.c{
+    color: #f14624;
+    font-size: 25px;
+}

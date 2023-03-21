@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/d-bord-2.css">
+    <!-- icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body style="background-color: transparent;">
+    <div class="container-fluid concolor p-3 ">
+        <div class="row p-2">
+            <div class="col border d-flex align-items-center border-0 p-0">
+                <p class="h4 textcol fw-bold mt-1 ">Dashbord |</p>
+                <lord-icon src="https://cdn.lordicon.com/osuxyevn.json" trigger="hover" style="width:25px;height:25px">
+                </lord-icon>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mt-3 ms-2">
+                    <ol class="breadcrumb ">
+                        <li class="breadcrumb-item text-dark"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dashbord</li>
+                    </ol>
+                </nav>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="col p-1 bg-white  rounded shadow  text-center ">
+                    <p class="h6 ">Total Income </p>
+                    <p class="h3 fw-bold m-2">$758 <lord-icon src="https://cdn.lordicon.com/rvuqcvqy.json"
+                            trigger="loop" style="width:25px;height:25px">
+                        </lord-icon></p>
+                    <lord-icon src="https://cdn.lordicon.com/oegrrprk.json" trigger="loop"
+                        style="width:100px;height:100px">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-1 mt-md-1 mt-lg-0">
+                <div class="col p-1 bg-white  rounded shadow text-center ">
+                    <p class="h6 p-2">Orders Received</p>
+                    <p class="h3 fw-bold m-2">$1025 <lord-icon src="https://cdn.lordicon.com/rvuqcvqy.json"
+                            trigger="loop" style="width:25px;height:25px">
+                        </lord-icon></p>
+                    <img src="/assets/media/1.gif" class="icon ms-auto me-auto" alt="" width="100px">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-1 mt-md-0  mt-md-1 mt-lg-0">
+                <div class="col p-1 bg-white  rounded shadow text-center ">
+                    <p class="h6 p-2">Total Sales </p>
+                    <p class="h3 fw-bold m-2">$956 <lord-icon src="https://cdn.lordicon.com/rvuqcvqy.json"
+                            trigger="loop" style="width:25px;height:25px">
+                        </lord-icon></p>
+                    <img src="/assets/media/2.gif" class="icon ms-auto me-auto" alt="" width="100px">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-1 mt-md-1 mt-lg-0">
+                <div class="col p-1 bg-white  rounded shadow text-center ">
+                    <p class="h6 p-2">Total Active Users</p>
+                    <p class="h3 fw-bold m-2">$214 <lord-icon src="https://cdn.lordicon.com/rvuqcvqy.json"
+                            trigger="loop" style="width:25px;height:25px">
+                        </lord-icon></p>
+                    <img src="/assets/media/3.gif" class="icon ms-auto me-auto" alt="" width="100px">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 p-3 rounded shadow m-3 bg-white mt-2 mt-md-3 mt-lg-3">
+            <div class="col d-flex justify-content-between">
+                <p class="h6 ">Revenue Report</p>
+                <button type="button" class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false"><i
+                        class="bi bi-three-dots-vertical"></i>
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="ms-2 p-2 hoverli">Action</li>
+                    <li class="ms-2 p-2 hoverli">Another action</li>
+                    <li class="ms-2 p-2 hoverli">somthing elese</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="row">
+                        <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-9">
+                    <div>
+                        <div id="chartContainer2" style="height: 370px; width:100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-3  rounded shadow">
+                <div class="col-6" style="background-color: white;">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="row ">
+                        <div class="col  d-flex justify-content-between align-items-center">
+                            <p class="h6 ms-2">Task List</p>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn border-0 " data-bs-toggle="dropdown"
+                                    aria-expanded="false"><i class="bi bi-three-dots-vertical"></i>
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="ms-2 hoverli p-2">Action</li>
+                                    <li class="ms-2 hoverli p-2">Another action</li>
+                                    <li class="ms-2 hoverli p-2">Somthing else here</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="col d-flex ">
+                                <div class="col">
+                                    <span class="avatar"
+                                        style="background-image: url(https://randomuser.me/api/portraits/women/85.jpg)"><span
+                                            class="m-5">Sarah_Smith</span></span>
+                                </div>
+                                <div class="col d-none d-md-block">
+                                    <span class="avatar"
+                                        style="background-image: url(https://randomuser.me/api/portraits/women/87.jpg)"><span
+                                            class="m-5">Jalpa_Joshi</span></span>
+                                </div>
+                                <div class="col d-none d-md-block">
+                                    <span class="avatar"
+                                        style="background-image: url(https://randomuser.me/api/portraits/women/88.jpg)"><span
+                                            class="m-5">Mark_Peter</span></span>
+                                </div>
+
+                            </div>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active show" id="usrtab1">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover dashboard-task-infos">
+                                            <thead>
+                                                <tr>
+                                                    <th>Task</th>
+                                                    <th>Status</th>
+                                                    <th>Manager</th>
+                                                    <th>Progress</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Task C</td>
+                                                    <td><span class="btn btn-outline-success">Completed</span></td>
+                                                    <td>John Doe</td>
+                                                    <td>
+
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-warning" role="progressbar"
+                                                                style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Task A</td>
+                                                    <td><span class="btn btn-outline-danger ">On Process</span></td>
+                                                    <td>John Doe</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-success" role="progressbar"
+                                                                style="width: 100%" aria-valuenow="50" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Task B</td>
+                                                    <td><span class="btn btn-outline-primary">On Hold</span></td>
+                                                    <td>John Doe</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-info" role="progressbar"
+                                                                style="width: 75%" aria-valuenow="50" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Task D</td>
+                                                    <td><span class="btn btn-outline-success ">Completed</span></td>
+                                                    <td>John Doe</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-danger" role="progressbar"
+                                                                style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                    </div>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Task E</td>
+                                        <td><span class="btn btn-outline-primary ">On Hold</span></td>
+                                        <td>John Doe</td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar"
+                                                    style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
+                                            </div>
+                                </div>
+                                </td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="usrtab2">
+                            <div class="table-responsive">
+                                <table class="table table-hover dashboard-task-infos">
+                                    <thead>
+                                        <tr>
+                                            <th>Task</th>
+                                            <th>Status</th>
+                                            <th>Manager</th>
+                                            <th>Progress</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Task D</td>
+                                            <td><span class="badge col-red">On Process</span></td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="progress shadow-style border-radius-per-10">
+                                                    <div class="progress-bar l-bg-red width-per-62" role="progressbar"
+                                                        aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Task E</td>
+                                            <td><span class="badge col-purple">On Hold</span></td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="progress shadow-style border-radius-per-10">
+                                                    <div class="progress-bar l-bg-purple width-per-40"
+                                                        role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Task F</td>
+                                            <td><span class="badge col-green">Completed</span></td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="progress shadow-style border-radius-per-10">
+                                                    <div class="progress-bar l-bg-green width-per-72" role="progressbar"
+                                                        aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>TaskG</td>
+                                            <td><span class="badge col-red">On Process</span></td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="progress shadow-style border-radius-per-10">
+                                                    <div class="progress-bar l-bg-red width-per-62" role="progressbar"
+                                                        aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Task K</td>
+                                            <td><span class="badge col-purple">On Hold</span></td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="progress shadow-style border-radius-per-10">
+                                                    <div class="progress-bar l-bg-purple width-per-40"
+                                                        role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="usrtab3">
+                            <div class="table-responsive">
+                                <table class="table table-hover dashboard-task-infos">
+                                    <thead>
+                                        <tr>
+                                            <th>Task</th>
+                                            <th>Status</th>
+                                            <th>Manager</th>
+                                            <th>Progress</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Task E</td>
+                                            <td><span class="badge col-purple">On Hold</span></td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="progress shadow-style border-radius-per-10">
+                                                    <div class="progress-bar l-bg-purple width-per-40"
+                                                        role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Task D</td>
+                                            <td><span class="badge col-red">On Process</span></td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="progress shadow-style border-radius-per-10">
+                                                    <div class="progress-bar l-bg-red width-per-62" role="progressbar"
+                                                        aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Task F</td>
+                                            <td><span class="badge col-green">Completed</span></td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="progress shadow-style border-radius-per-10">
+                                                    <div class="progress-bar l-bg-green width-per-72" role="progressbar"
+                                                        aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Task L</td>
+                                            <td><span class="badge col-red">On Process</span></td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="progress shadow-style border-radius-per-10">
+                                                    <div class="progress-bar l-bg-red width-per-62" role="progressbar"
+                                                        aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Task H</td>
+                                            <td><span class="badge col-purple">On Hold</span></td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="progress shadow-style border-radius-per-10">
+                                                    <div class="progress-bar l-bg-purple width-per-40"
+                                                        role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="row ">
+                <div class="col  d-flex justify-content-between align-items-center">
+                    <p class="h6 ms-2">Task List</p>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn border-0 " data-bs-toggle="dropdown" aria-expanded="false"><i
+                                class="bi bi-three-dots-vertical"></i>
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="ms-2 hoverli p-2">Action</li>
+                            <li class="ms-2 hoverli p-2">Another action</li>
+                            <li class="ms-2 hoverli p-2">Somthing else here</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="recent-comment">
+                    <div class="notice-board">
+                        <div class="table-img">
+                            <span class="avatar"
+                                style="background-image: url(https://randomuser.me/api/portraits/women/85.jpg)"><span
+                                    class="ms-5 fs-bold text-nowrap text-success">Airi Satou</span></span>
+                        </div>
+                        <div class="notice-body">
+                            <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</p>
+                            <small class="text-muted">7 hours ago</small>
+                        </div>
+                    </div>
+                    <div class="notice-board">
+                        <div class="table-img">
+                            <span class="avatar"
+                                style="background-image: url(https://randomuser.me/api/portraits/women/89.jpg)"><span
+                                    class="m-5 fs-bold text-nowrap text-primary">Sarah_Smith</span></span>
+                        </div>
+                        <div class="notice-body">
+                            <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</p>
+                            <p class="comment-date">1 hour ago</p>
+                        </div>
+                    </div>
+                    <div class="notice-board">
+                        <div class="table-img">
+                            <span class="avatar"
+                                style="background-image: url(https://randomuser.me/api/portraits/women/87.jpg)"><span
+                                    class="m-5 fs-bold text-nowrap text-info">Cara Stevens</span></span>
+                        </div>
+                        <div class="notice-body">
+                            <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</p>
+                            <div class="comment-date">Yesterday</div>
+                        </div>
+                    </div>
+                    <div class="notice-board no-border">
+                        <div class="table-img">
+                            <span class="avatar"
+                                style="background-image: url(https://randomuser.me/api/portraits/women/82.jpg)"><span
+                                    class="m-5 fs-bold text-nowrap text-danger">Ashton Cox</span></span>
+                        </div>
+                        <div class="notice-body">
+                            <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</p>
+                            <div class="comment-date">Yesterday</div>
+                        </div>
+                    </div>
+                    <div class="notice-board no-border">
+                        <div class="table-img">
+                            <span class="avatar"
+                                style="background-image: url(https://randomuser.me/api/portraits/women/84.jpg)"><span
+                                    class="m-5 fs-bold text-nowrap text-success">Jalpa Gandhi</span></span>
+                        </div>
+                        <div class="notice-body">
+                            <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam.</p>
+                            <div class="comment-date">Yesterday</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="row ">
+        <div class="col-12 col-md-4 col-lg-4bg p-3">
+            <div class="col bg-white rounded shadow mb-5">
+                <div id="myPlot" style="width:100%;max-width:700px"></div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-8 p-3 mt-lg-5 mt-md-5 rounded">
+            <div class="col bg-white rounded shadow overflow-x-scroll gandhi">
+                <p class="h5 ms-2">Latest Transactions</p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">order no</th>
+                                <th scope="col">cust name</th>
+                                <th scope="col">status</th>
+                                <th scope="col">amount</th>
+                                <th scope="col">edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-bottom">
+                                <th scope="row"><span class="avatar"
+                                        style="background-image: url(https://randomuser.me/api/portraits/women/89.jpg)"><span
+                                            class="m-5 fs-bold"></span></span></th>
+                                <td> XY56987</td>
+                                <td>jhone deo</td>
+                                <td class="d-flex ">
+                                    <div class="nevil rounded-circle bg-success mt-2 me-2"></div>confirm
+                                </td>
+                                <td> $955</td>
+                                <td><i class="bi bi-pencil"></i></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <th scope="row"><span class="avatar"
+                                        style="background-image: url(https://randomuser.me/api/portraits/women/33.jpg)"><span
+                                            class="m-5 fs-bold"></span></span></th>
+                                <td>XY569123</td>
+                                <td>Thornton</td>
+                                <td class="d-flex ">
+                                    <div class="nevil rounded-circle bg-danger mt-2 me-2"></div>confirm
+                                </td>
+                                <td> $855</td>
+                                <td><i class="bi bi-pencil"></i></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <th scope="row"><span class="avatar"
+                                        style="background-image: url(https://randomuser.me/api/portraits/women/31.jpg)"><span
+                                            class="m-5 fs-bold"></span></span></th>
+                                <td>XY569123</td>
+                                <td>al habib</td>
+                                <td class="d-flex ">
+                                    <div class="nevil rounded-circle bg-success mt-2 me-2"></div>confirm
+                                </td>
+                                <td> $295</td>
+                                <td><i class="bi bi-pencil"></i></td>
+
+                            </tr>
+                            <tr class="border-bottom">
+                                <th scope="row"><span class="avatar"
+                                        style="background-image: url(https://randomuser.me/api/portraits/women/31.jpg)"><span
+                                            class="m-5 fs-bold"></span></span></th>
+                                <td>XY569123</td>
+                                <td>chota sakil</td>
+                                <td class="d-flex ">
+                                    <div class="nevil rounded-circle bg-danger mt-2 me-2"></div>payment faild
+                                </td>
+                                <td> $355</td>
+                                <td><i class="bi bi-pencil"></i></td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+    </div>
+
+    <!--end-->
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="/assets/js/d-bord-2.js"></script>
+    <!-- flowite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+</body>
+
+</html>

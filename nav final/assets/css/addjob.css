@@ -1,0 +1,81 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  
+}
+body::-webkit-scrollbar { width: 0px; }
+
+body::-webkit-scrollbar-track {
+  background: var(--white);
+  border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 80%);
+  border: 3px solid var(--white);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
+
+
+
+
+
+body{
+  background-color: transparent !important;
+}
+.ak{
+  color: green;
+}
+
+.container{
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+}
+a{
+  text-decoration: none !important;
+}
+i{
+  color: #3d434b;
+}
+.textcol{
+  color: #353c48;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(186, 184, 184);
+  border-width:0px 0px 2px 0px;
+}
+input[type=text]:focus {
+  outline:none;
+  border-image: linear-gradient(to right, #2b02e3 0%, #1e00ff 100%) 1;
+  border-width:0px 0px 2px 0px;
+}
+
+input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-width:0px 0px 2px 0px;
+}
+input[type=date]:focus {
+  outline:none;
+  border-image: linear-gradient(to right, blue 0%, blue 100%) 1;
+  border-width:0px 0px 2px 0px;
+}
+select{
+  border: none !important;
+  border-bottom: 2px solid rgb(108, 108, 147) !important;
+}
+select :focus{
+  border: none !important;
+  border-bottom: 2px solid rgb(120, 120, 164) !important;
+ }

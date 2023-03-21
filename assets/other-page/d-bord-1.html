@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/assets/css/d-bord-1.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .frosted-glass {
+
+
+      position: relative;
+      z-index: 1;
+
+
+      box-sizing: border-box;
+      box-shadow: 0 .5em 1em rgba(0, 0, 0, .3);
+    }
+
+    .frosted-glass::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      box-shadow: inset 0 0 3000px rgba(255, 255, 255, 0.092);
+      filter: blur(10px);
+
+    }
+
+    .gradient-1 {
+      background-image: linear-gradient(230deg, #759bff, #843cf6);
+    }
+
+    .gradient-2 {
+      background-image: linear-gradient(230deg, #fc5286, #fbaaa2);
+    }
+
+    .gradient-3 {
+      background-image: linear-gradient(230deg, #ffc480, #ff763b);
+    }
+
+    .gradient-4 {
+      background-image: linear-gradient(230deg, #0e4cfd, #6a8eff);
+    }
+
+    .back1 {
+      background-color: #ffc480;
+    }
+
+    .back2 {
+      background-color: #759bff;
+    }
+
+    .back3 {
+      background-color: #fc5286;
+    }
+
+    .back4 {
+      background-color: #6a8eff;
+    }
+
+    .mm {
+      height: 10px;
+    }
+
+    body::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: var(--white);
+      border-left: 1px solid var(--cultured);
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background: hsl(0, 0%, 80%);
+      border: 3px solid var(--white);
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+      background: hsl(0, 0%, 70%);
+    }
+
+    /* Style for the container of the scrollable content */
+
+
+    /* Style for the horizontal scrollbar */
+    .gandhi::-webkit-scrollbar {
+      height: 0px;
+    }
+
+    .m2m {
+      height: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-12 col-lg-3 col-md-6 col-sm-6 p-2 ">
+        <div class="col shadow rounded p-2  gradient-1">
+          <div class="frosted-glass  p-2  rounded text-white">
+            <p class="h5 fw-bold">Projects</p>
+            <div class="col d-flex justify-content-between">
+              <p class="h3 fw-bold">125</p>
+              <p class="h6">24.7% <lord-icon src="https://cdn.lordicon.com/bewubbww.json" trigger="hover"
+                  colors="primary:#ffffff" style="width:20px;height:20px">
+                </lord-icon></p>
+            </div>
+            <div class="progress mm" role="progressbar" aria-label="Success example" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar back1" style="width: 25%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-6 col-sm-6 p-2">
+        <div class="col shadow rounded p-2  gradient-2">
+          <div class="frosted-glass  p-2 rounded  text-white">
+            <p class="h5 fw-bold">New Employee</p>
+            <div class="col d-flex justify-content-between">
+              <p class="h3 fw-bold">213</p>
+              <p class="h6">5.28% <lord-icon src="https://cdn.lordicon.com/bewubbww.json" trigger="hover"
+                  colors="primary:#ffffff" style="width:20px;height:20px">
+                </lord-icon></p>
+            </div>
+            <div class="progress mm" role="progressbar" aria-label="Success example" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar back2" style="width: 25%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-6 col-sm-6 p-2">
+        <div class="col shadow rounded p-2 gradient-3">
+          <div class="frosted-glass  p-2 rounded  text-white">
+            <p class="h5 fw-bold">Running Tasks</p>
+            <div class="col d-flex justify-content-between">
+              <p class="h3 fw-bold">10,225</p>
+              <p class="h6">28.6% <lord-icon src="https://cdn.lordicon.com/bewubbww.json" trigger="hover"
+                  colors="primary:#ffffff" style="width:20px;height:20px">
+                </lord-icon></p>
+            </div>
+            <div class="progress mm" role="progressbar" aria-label="Success example" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar back4" style="width: 25%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-6 col-sm-6 p-2">
+        <div class="col shadow rounded p-2 gradient-4">
+          <div class="frosted-glass  p-2  rounded text-white">
+            <p class="h5 fw-bold">Earning</p>
+            <div class="col d-flex justify-content-between">
+              <p class="h3 fw-bold">$2,658</p>
+              <p class="h6">20.22% <lord-icon src="https://cdn.lordicon.com/bewubbww.json" trigger="hover"
+                  colors="primary:#ffffff" style="width:20px;height:20px">
+                </lord-icon></p>
+            </div>
+            <div class="progress mm" role="progressbar" aria-label="Success example" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar back3" style="width: 25%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-6 col-md-6 p-4">
+        <div class="col bg-white rounded shadow">
+          <div class="row p-3">
+            <div class="col">
+              <p class="h6">Products Chart</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <figure class="highcharts-figure border-0">
+                <div id="container"></div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6 p-4">
+        <div class="col bg-white rounded shadow mt-lg-5 mt-md-5">
+          <div class="row p-3">
+            <div class="col">
+              <p class="h6">Profit Chart</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col p-5">
+
+<div id="chart_div" class=" max-w-screen-md h-100"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-3 ">
+      <div class="col-12 col-md-7 col-lg-7 p-lg-5 p-md-3 ">
+        <div class="row bg-white shadow rounded p-2">
+          <div class="col overflow-x-scroll gandhi">
+            <table class="table align-middle mb-0 bg-white ">
+              <thead class="bg-light">
+                <tr>
+                  <th>Name</th>
+                  <th>Title</th>
+                  <th>Status</th>
+                  <th>Progress</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+                        class="rounded-circle" />
+                      <div class="ms-3">
+                        <p class="fw-bold mb-1">John Doe</p>
+                        <p class="text-muted mb-0">john.doe@gmail.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="fw-normal mb-1">Software engineer</p>
+                    <p class="text-muted mb-0">IT department</p>
+                  </td>
+                  <td>
+                    <span class="badge badge-success rounded-pill d-inline">Active</span>
+                  </td>
+                  <td>
+                    <div class="progress m2m" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-danger" style="width: 50%"></div>
+                    </div>
+                  </td>
+                  <td>
+                    $150.00
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+                        style="width: 45px; height: 45px" />
+                      <div class="ms-3">
+                        <p class="fw-bold mb-1">Alex Ray</p>
+                        <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="fw-normal mb-1">Consultant</p>
+                    <p class="text-muted mb-0">Finance</p>
+                  </td>
+                  <td>
+                    <span class="badge badge-primary rounded-pill d-inline">Onboarding</span>
+                  </td>
+                  <td>
+                    <div class="progress m2m" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                  </td>
+                  <td>
+                    $470.00
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt=""
+                        style="width: 45px; height: 45px" />
+                      <div class="ms-3">
+                        <p class="fw-bold mb-1">Kate Hunington</p>
+                        <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="fw-normal mb-1">Designer</p>
+                    <p class="text-muted mb-0">UI/UX</p>
+                  </td>
+                  <td>
+                    <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
+                  </td>
+                  <td>
+                    <div class="progress m2m" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-warning" style="width: 50%"></div>
+                    </div>
+                  </td>
+                  <td>
+                    $564.00
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+                        style="width: 45px; height: 45px" />
+                      <div class="ms-3">
+                        <p class="fw-bold mb-1">Alex Ray</p>
+                        <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="fw-normal mb-1">Consultant</p>
+                    <p class="text-muted mb-0">Finance</p>
+                  </td>
+                  <td>
+                    <span class="badge badge-primary rounded-pill d-inline">Onboarding</span>
+                  </td>
+                  <td>
+                    <div class="progress m2m" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-success" style="width: 50%"></div>
+                    </div>
+                  </td>
+                  <td>
+                    $925.00
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://newsonair.gov.in/writereaddata/News_Pictures/NAT/2020/Sep/NPIC-2020923104132.jpg"
+                        class="rounded-circle" alt="" style="width: 45px; height: 45px" />
+                      <div class="ms-3">
+                        <p class="fw-bold mb-1">Mark Zeb</p>
+                        <p class="text-muted mb-0">mark.zeb@gmail.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="fw-normal mb-1">web developer</p>
+                    <p class="text-muted mb-0">IT Expert</p>
+                  </td>
+                  <td>
+                    <span class="badge badge-success rounded-pill d-inline">Active</span>
+                  </td>
+                  <td>
+                    <div class="progress m2m" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar " style="width: 70%"></div>
+                    </div>
+                  </td>
+                  <td>
+                    $785.00
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://www.pinkvilla.com/imageresize/petition-against-gangubai-dismissed.jpg?width=752&t=pvorg"
+                        class="rounded-circle" alt="" style="width: 45px; height: 45px" />
+                      <div class="ms-3">
+                        <p class="fw-bold mb-1">gangubai</p>
+                        <p class="text-muted mb-0">gangubai@gmail.com</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="fw-normal mb-1">Flutter</p>
+                    <p class="text-muted mb-0">Women</p>
+                  </td>
+                  <td>
+                    <span class="badge badge-primary rounded-pill d-inline">Onboarding</span>
+                  </td>
+                  <td>
+                    <div class="progress m2m" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-success" style="width: 50%"></div>
+                    </div>
+                  </td>
+                  <td>
+                    $270.00
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col p-lg-5 p-md-3 mt-3 mt-lg-0 mt-md-0">
+        <div class="row bg-white shadow rounded p-2">
+          <div class="col">
+            <div class="row mt-2">
+              <div class="col  d-flex justify-content-between">
+                <p class="h6">TODO List</p>
+
+                <i class="bi bi-three-dots-vertical" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col listpk">
+                <ul id="myUL">
+                  <li>office Picnic</li>
+                  <li>Website Must Be Finished</li>
+                  <li>Recharge My Mobile</li>
+                  <li>Add salary details </li>
+                  <li>Read a book</li>
+                  <li>write a code</li>
+                  <li>it,s bitiya</li>
+                  <li>hello world</li>
+                  <li>very dangerous</li>
+                  <li>dream company</li>
+                </ul>
+                <div id="myDIV" class="header ps-4 pe-4">
+
+                  <input type="text" id="myInput" class="" placeholder="Enter TODO...">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row mt-3">
+      <div class="col-12 col-lg-4 col-lg-4 col-sm-12 p-3">
+        <div class="col bg-white shadow rounded p-2">
+          <div class="row">
+            <div class="col">
+              <div class="col  d-flex justify-content-between">
+                <p class="h6">Chart 1</p>
+
+                <i class="bi bi-three-dots-vertical" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <canvas id="myChart" ></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-lg-4 col-sm-12 p-3">
+        <div class="col bg-white shadow rounded p-2">
+          <div class="row">
+            <div class="col">
+              <div class="col  d-flex justify-content-between">
+                <p class="h6">Chart 2</p>
+
+                <i class="bi bi-three-dots-vertical" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div id="chartContainer" style="min-height: 185px; width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-lg-4 col-sm-12 p-3">
+        <div class="col bg-white shadow rounded p-2">
+          <div class="row">
+            <div class="col">
+              <div class="col  d-flex justify-content-between">
+                <p class="h6">Chart 3</p>
+
+                <i class="bi bi-three-dots-vertical" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <canvas id="myChart1" ></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+ 
+  <script src="/assets/js/d-bord-1.js"></script>
+  <!-- chart part -->
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <canvas id="myChart"></canvas>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script>
+    const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+    const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+    
+    new Chart("myChart", {
+      type: "line", 
+      data: {
+        labels: xValues,
+        datasets: [{
+          fill: false,
+          lineTension: 0,
+          backgroundColor: "rgba(0,0,255,1.0)",
+          borderColor: "rgba(0,0,255,0.1)",
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+
+
+
+    
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title:{
+		text: "Website Traffic"
+	},
+	axisX:{
+		valueFormatString: "DD MMM"
+	},
+	axisY: {
+		title: "Number of Visitors",
+		scaleBreaks: {
+			autoCalculate: true
+		}
+	},
+	data: [{
+		type: "line",
+		xValueFormatString: "DD MMM",
+		color: "#F08080",
+		dataPoints: [
+			{ x: new Date(2017, 0, 1), y: 610 },
+			{ x: new Date(2017, 0, 2), y: 680 },
+			{ x: new Date(2017, 0, 3), y: 690 },
+			{ x: new Date(2017, 0, 4), y: 700 },
+			{ x: new Date(2017, 0, 5), y: 710 },
+			{ x: new Date(2017, 0, 6), y: 658 },
+			{ x: new Date(2017, 0, 7), y: 734 },
+			{ x: new Date(2017, 0, 8), y: 963 },
+			{ x: new Date(2017, 0, 9), y: 847 },
+			{ x: new Date(2017, 0, 10), y: 853 },
+			{ x: new Date(2017, 0, 11), y: 869 },
+			{ x: new Date(2017, 0, 12), y: 943 },
+			{ x: new Date(2017, 0, 13), y: 970 },
+			{ x: new Date(2017, 0, 14), y: 869 },
+			{ x: new Date(2017, 0, 15), y: 890 },
+			{ x: new Date(2017, 0, 16), y: 930 },
+			{ x: new Date(2017, 0, 17), y: 1850 },
+			{ x: new Date(2017, 0, 18), y: 1905 },
+			{ x: new Date(2017, 0, 19), y: 1980 },
+			{ x: new Date(2017, 0, 20), y: 1858 },
+			{ x: new Date(2017, 0, 21), y: 1034 },
+			{ x: new Date(2017, 0, 22), y: 963 },
+			{ x: new Date(2017, 0, 23), y: 847 },
+			{ x: new Date(2017, 0, 24), y: 853 },
+			{ x: new Date(2017, 0, 25), y: 869 },
+			{ x: new Date(2017, 0, 26), y: 943 },
+			{ x: new Date(2017, 0, 27), y: 970 },
+			{ x: new Date(2017, 0, 28), y: 869 },
+			{ x: new Date(2017, 0, 29), y: 890 },
+			{ x: new Date(2017, 0, 30), y: 930 },
+			{ x: new Date(2017, 0, 31), y: 750 }
+		]
+	}]
+});
+chart.render();
+
+}
+
+
+const ctx = document.getElementById('myChart1');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>  
+Highcharts.chart('container', {
+  title: {
+    text: 'Sales of petroleum products March, Norway',
+    align: 'left'
+  },
+  xAxis: {
+    categories: ['Jet fuel', 'Duty-free diesel', 'Petrol', 'Diesel', 'Gas oil']
+  },
+  yAxis: {
+    title: {
+      text: 'Million liters'
+    }
+  },
+  tooltip: {
+    valueSuffix: ' million liters'
+  },
+  series: [{
+    type: 'column',
+    name: '2020',
+    data: [59, 83, 65, 228, 184]
+  }, {
+    type: 'column',
+    name: '2021',
+    data: [24, 79, 72, 240, 167]
+  }, {
+    type: 'column',
+    name: '2022',
+    data: [58, 88, 75, 250, 176]
+  }, {
+    type: 'spline',
+    name: 'Average',
+    data: [47, 83.33, 70.66, 239.33, 175.66],
+    marker: {
+      lineWidth: 2,
+      lineColor: Highcharts.getOptions().colors[3],
+      fillColor: 'white'
+    }
+  }, {
+    type: 'pie',
+    name: 'Total',
+    data: [{
+      name: '2020',
+      y: 619,
+      color: Highcharts.getOptions().colors[0], // 2020 color
+      dataLabels: {
+        enabled: true,
+        distance: -50,
+        format: '{point.total} M',
+        style: {
+          fontSize: '15px'
+        }
+      }
+    }, {
+      name: '2021',
+      y: 586,
+      color: Highcharts.getOptions().colors[1] // 2021 color
+    }, {
+      name: '2022',
+      y: 647,
+      color: Highcharts.getOptions().colors[2] // 2022 color
+    }],
+    center: [75, 65],
+    size: 100,
+    innerSize: '70%',
+    showInLegend: false,
+    dataLabels: {
+      enabled: false
+    }
+  }]
+});
+  </script>
+   <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales', 'Expenses'],
+        ['2013',  1000,      400],
+        ['2014',  1170,      460],
+        ['2015',  660,       1120],
+        ['2016',  1030,      540]
+      ]);
+
+      var options = {
+        title: 'Company Performance',
+        hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+        vAxis: {minValue: 0}
+      };
+
+      var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script> 
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: transparent !important;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+ 
+}
+.textcol{
+  color: #97a3b6;
+}
+.container{
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0,0.3);
+}
+a{
+  text-decoration: none !important;
+}
+i{
+  color: #3d434b;
+}
+.textcol{
+  color: #353c48;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(186, 184, 184);
+  border-width:0px 0px 2px 0px;
+}
+input[type=text]:focus {
+  outline:none;
+  border-image: linear-gradient(to right, #2b02e3 0%, #1e00ff 100%) 1;
+  border-width:0px 0px 2px 0px;
+}
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-width:0px 0px 2px 0px;
+}
+input[type=email]:focus {
+  outline:none;
+  border-image: linear-gradient(to right, rgb(0, 0, 255) 0%, rgb(1, 1, 241) 100%) 1;
+  border-width:0px 0px 2px 0px;
+}
+input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-width:0px 0px 2px 0px;
+}
+input[type=date]:focus {
+  outline:none;
+  border-image: linear-gradient(to right, blue 0%, blue 100%) 1;
+  border-width:0px 0px 2px 0px;
+}
+select{
+  border: none !important;
+  border-bottom: 2px solid rgb(108, 108, 147) !important;
+}
+select :focus{
+  border: none !important;
+  border-bottom: 2px solid blue !important;
+ }
+.btn{
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.bgimage{
+  background-image: url(https://i.postimg.cc/Ghd8Ph0j/Untitled-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 30px;
+color: transparent;
+}
